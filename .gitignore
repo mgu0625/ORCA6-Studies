@@ -1,0 +1,38 @@
+# ORCA-related files
+*.gbw        # Binary wavefunction files (large, unnecessary)
+*.tmp        # Temporary ORCA files
+*.hess       # Hessian matrix files (can be regenerated)
+*.prop       # Property calculation files
+*.engrad     # Gradient files
+*.int        # Integral files
+*.wfn        # Wavefunction files
+*.trj        # Trajectory files from optimizations
+*.log        # Log files (not needed in repo)
+*.xyz~       # Backup geometry files
+
+# Output files (optional, keep only useful ones)
+output_files/*.out
+output_files/*.tmp
+output_files/*.bak
+
+# Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Editor and OS-specific files
+.DS_Store
+.vscode/
+*.swp        # Vim swap files
+*.swo        # Vim backup files
+*.bak        # General backup files
+
+# Large or temporary files
+results/*.dat   # Raw data files (consider keeping processed versions)
+results/*.csv   # Large CSV datasets (if not necessary)
+figures/*.eps   # Large vector images (if regenerated)

@@ -1,0 +1,28 @@
+! RKS def2-SVP RIJCOSX
+! TightSCF SlowConv
+! VERYTIGHTOPT DefGrid2
+
+%maxcore 4000
+
+%pal
+  nprocs 1
+end
+
+%method
+  Functional PBE0
+  RI on
+end
+
+%scf
+  HFTyp RKS
+  maxiter 300
+end
+
+%geom
+  TolRMSG=3e-5
+  MaxIter 200
+end
+
+
+
+* xyzfile 0 1 /full/pathlink/to/file/HYQGEOMOPT00.xyz

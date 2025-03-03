@@ -1,0 +1,32 @@
+! RKS def2-SVP def2/J RIJCOSX
+! TightSCF SlowConv CPCM(mecn)
+! VERYTIGHTOPT DefGrid2
+
+%maxcore 4000
+
+%pal
+  nprocs 1
+end
+
+%method
+  Functional PBE0
+  RI on
+end 
+
+%scf
+  HFTyp RKS
+  maxiter 300
+end
+
+%geom
+  TolRMSG=3e-5
+  MaxIter 200
+end
+
+%cpcm
+  epsilon 37.5
+  surfacetype vdw_gaussian.  #for cpcm studies
+end
+
+
+* xyzfile 0 1 /full/pathlink/HYQGeomOpt00.xyz

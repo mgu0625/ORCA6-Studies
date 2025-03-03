@@ -1,0 +1,30 @@
+! RKS def2-SVP def2/J RIJCOSX
+! TightSCF SlowConv
+! VERYTIGHTOPT FREQ DefGrid2
+! moread
+
+%maxcore 4000
+
+%pal
+  nprocs 1
+end
+
+%method
+  Functional PBE0
+  RI on
+end 
+
+%scf
+  HFTyp RKS
+  maxiter 300
+end
+
+%geom
+  TolRMSG=3e-5
+  MaxIter 200
+end
+
+%moinp "/full/pathlink/to/previous/calculation/filename.gbw"
+
+* xyzfile 0 1 /full/pathlink/to/previous/calculation/filename.xyz
+
