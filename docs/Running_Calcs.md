@@ -13,6 +13,7 @@ For ORCA 6 Installation and Extraction, Follow Guide Posted on [ORCA WEBSITE](ht
 ## Initiating ORCA 6 Calculations
 
 Once ORCA is installed and extracted, make sure to run command **directly** from file in which input file is located.
+
 **IMPORTANT**: ORCA performs calculations within this directory (Personal PC and Cluster BOTH), generating and extracting files during the process. To maintain organization and avoid clutter, it's best to keep only essential files in this folder -such as `.inp`, `.xyz` and other required files like `.gbw`-while running calculations.
 
 #### for personal PC (bash command)
@@ -37,7 +38,7 @@ Once ORCA is installed and extracted, make sure to run command **directly** from
 
 ## Converting `.gbw` to `.molden` in ORCA 6
 
-- The `.gbw` files store **wavefunction information** and is required for:
+- The `.gbw` files store **wavefunction information** and are required for:
 	- MO visualization
 	- Proceeding Calculations
 - Conversion Command:
@@ -56,7 +57,7 @@ Once ORCA is installed and extracted, make sure to run command **directly** from
 
 1. `!PRINTMOS`
 - Prints **MO(Molecular Orbital)** coefficients in `.out` file.
-- Useful for checking MO contributions and having to separately inport `.molden` for visualization.
+- Useful for checking MO contributions and having to separately import `.molden` for visualization.
 - Sample Input Script
 	`!UKS def2-TZVP def2/J RIJCOSX SCF PRINTMOS`
 
