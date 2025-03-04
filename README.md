@@ -24,7 +24,8 @@ Calculation is run on ORCA 6, downloaded on Linux PC (Ubuntu 64-bit Virtual Node
 
 One thing interesting that was observed towards the end of optimization step of PBE with specifically inputted parameters for D3BJ damping.
 
-<img width="490" alt="image" src="https://github.com/user-attachments/assets/be49aeee-fad4-471d-bb76-498c168da15e" />
+<img width="490" alt="image" src="https://github.com/user-attachments/assets/be49aeee-fad4-471d-bb76-498c168da15e" / | 200> <img width="730" alt="image" src="https://github.com/user-attachments/assets/196c8cc3-e4c6-4d42-b4a1-04b8544b3848" / | 200>
+
 
 
 
