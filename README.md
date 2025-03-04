@@ -22,4 +22,9 @@ Initial Structure is built on Avogadro and coordinates are extracted by selectin
 Calculation is run on ORCA 6, downloaded on Linux PC (Ubuntu 64-bit Virtual Node built on Virtualbox).
 
 
+One thing interesting that was observed towards the end of optimization step of PBE with specifically inputted parameters for D3BJ damping.
+
+<img width="490" alt="image" src="https://github.com/user-attachments/assets/be49aeee-fad4-471d-bb76-498c168da15e" />
+
+
 
