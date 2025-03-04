@@ -130,13 +130,6 @@ Things to Note:
 | B3LYP | RIJCOSX + LIBXC | -6.33209E-08 | -382.1967823	| 68.25 | -382.0803708 | -382.1184962 | 23.92 | 3 min 51.463 sec | 
 | PBE | def2/J + D3BJ | -0.278910525 | -381.9746582 | 2.51 | -381.8607585 | -381.8990914 | 24.05 | 1 min 25.441 sec |
 
-<img width="658" alt="image" src="https://github.com/user-attachments/assets/626dff1f-2f8b-4585-be34-e4b0fc5028db" />
-
-
-Up Close (0 - 100 $cm^{-1}$)
-
-<img width="658" alt="image" src="https://github.com/user-attachments/assets/a8d815eb-b550-48fd-a9d0-c47e83eebcd7" />
-
 
 #### Notes from Concluding Frequency Calculation on HYQ
 - B3LYP showed most stable energy with lowest final SCF energy (-382.197 Eh) suggesting better stabilization in comparison to PBE0.
@@ -147,6 +140,9 @@ Up Close (0 - 100 $cm^{-1}$)
 - B3LYP overall showed most thermodynamically stable functional for this system with PBE0 being comparatively stable but with slightly less stability as indicated by higher energies. 
  
 Error when attempting to use D3BJ Dispersion Correction with PBE functional (Following DOI: 10.1063/1.4907719 and DOI: 10.1021/acs.jpclett.6b00780)
+
+- Most likely due to ORCA's limited support for D3BJ with PBE despite specifying parameters in input file.
+- PBE is pure DFT and ORCA typically applices D3 for pure GGA functionals [Read About it More](https://www.faccts.de/docs/orca/6.0/manual/contents/detailed/model.html)
 
 From `.out` file 
 
@@ -168,13 +164,23 @@ Plotting IR Spectrum (using EXCEL)
 
 ## 2. Solvent Effect Analysis
 
-CPCM Solvation Model Calculation
+### CPCM Solvation Model Calculation
 - Make sure to put CPCM(solventname) next to keyword and specify dielectric constant under `%cpcm`
+- `surface_type Gaussian` was implemented to CPCM to determine how solvent cavity is constructed
+  	- Without, default tessellataion-based cavity is constructed (calculated with and without  Gaussian-based cavity constructions)
+  
+
+##### Solent Used for HYQ Calculations:
+- Acetonitrile
+- Water
+- DMSO
+- n-Hexane
 
 **Example input file in /ORCA6-NOTES/input_files**
 
-### After Calculation
-- Compare structural differences in different solvents
-- Extracted dipole moments from `.out` file
+### After Geometry Optimization Calculation (Same Data was Extracted as Step 1)
+
+From Geometry Optimization
+
 
     
