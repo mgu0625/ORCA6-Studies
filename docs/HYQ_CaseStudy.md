@@ -1,5 +1,7 @@
 # Hydroquinone (HYQ) Computational Case Study
 
+### 1 Hartree (Eh) = 27.2114 eV = 630 kcal/mol = 2600 kJ / mol = $2.2 x 10^5 cm^{-1}$ = 1/13.6 Bohr
+
 ### 1. Introduction & Experimental Relevance
 HYQ is an aromatic organic compound with formula $C_6G_4(OH)_2$ consisting of 14 atoms. 
 
@@ -57,7 +59,7 @@ Things to Note:
    - **TightSCF**: Used to ensure more accurate SCF convergence by reducing the energy and density error thresholds, resulting in a more precise electronic structure calculation.
    - **VerytightOPT**: Used to impose stricter convergence criteria on optimization calculation, ensuring minimal residual forces on atoms and resulting in a highly optimized structure with accurate bond lengths and angles/
   
-#### After Calculation
+#### After Calculation of Geometry Optimization
 - Check bottom of `.out` file to ensure calculation terminated
   
 	<img width="509" alt="image" src="https://github.com/user-attachments/assets/4692d3a0-1eec-430a-951a-51a238e418d9" />
@@ -69,6 +71,12 @@ Things to Note:
   	- $E_{final}$ located towards botton of .inp
   	  
   	  <img width="615" alt="image" src="https://github.com/user-attachments/assets/1a8fbf7c-d9bc-4403-8c75-be5d0217fab0" />
+ 
+        - $E_{initial} is found right under where it **first** sais SCF Converged
+  	 
+  	       <img width="716" alt="Screenshot 2025-03-03 at 9 05 24 PM" src="https://github.com/user-attachments/assets/c297f681-8743-4bac-a403-46be79979dc4" />
+
+
        	- Python Script (attached to /script) was used to extract bond lengths and RMSD
   	    	- automated by parsing .xyz file to find the optimized coordinate and to reference for evaluating structural deviation (Make sure to know Atom Numbers, can visualize using Avogadro)
 
@@ -103,7 +111,59 @@ Things to Note:
   	- Some basis sets converged faster but most likely sacrificed accuracy.
   	- RIJCOSX-based hybrid-GGA functionals (e.g., PBE0, B3LYP) showed more accuracy HOWEVER, required longer computational times.
   	- def2/J + RI on sets optimized under a min while using RIJCOSX increased computational time to under 5 minutes.
-  	- RIJK computed faster compared to RIJCOSX (PBE0) even though RIJK is more computationally epensive
+  	- RIJK computed faster compared to RIJCOSX (PBE0) even though RIJK is more computationally expensive
+
+#### After HYQ Frequency Calculations 
+- vibrational frequencies (towards bottom of `.out`) was checked to make sure there's no imaginary frequencies
+
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/386be11e-0a6f-4b74-96c7-7990f1027027" />
+
+- Zero Point Energy (ZPE) correction found towards bottom of `.out` file
+
+  <img width="655" alt="image" src="https://github.com/user-attachments/assets/a1d3c88e-e20a-4383-80df-afab1f241e28" />
+
+- Recorded $ΔΗ_{corr}, ΔG_{corr} and ΔS values
+
+| Functional Name | Aux Basis | ΔE(eV) | Final SCF Energy (Eh) | ZPE (kcal/mol) | $ΔΗ_{corr}$ (Eh) | $ΔG_{corr}$ (Eh) | $ΔS_{final}$ (kcal/mol) | Computational Time |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| PBE0 | def2/J + RIJCOSX | -4.56349E-08 | -381.9832893 | 68.98 | -381.8657428 | -381.9038059 | 23.88 | 3 min 56.668 sec |
+| B3LYP | RIJCOSX + LIBXC | -6.33209E-08 | -382.1967823	| 68.25 | -382.0803708 | -382.1184962 | 23.92 | 3 min 51.463 sec | 
+| PBE | def2/J + D3BJ | -0.278910525 | -381.9746582 | 2.51 | -381.8607585 | -381.8990914 | 24.05 | 1 min 25.441 sec |
+
+<img width="658" alt="image" src="https://github.com/user-attachments/assets/626dff1f-2f8b-4585-be34-e4b0fc5028db" />
+
+
+Up Close (0 - 100 $cm^{-1}$)
+
+<img width="658" alt="image" src="https://github.com/user-attachments/assets/a8d815eb-b550-48fd-a9d0-c47e83eebcd7" />
+
+
+#### Notes from Concluding Frequency Calculation on HYQ
+- B3LYP showed most stable energy with lowest final SCF energy (-382.197 Eh) suggesting better stabilization in comparison to PBE0.
+- PBE showed least stable energy structure with highest final SCF energy (-381.861 Eh) suggesting less stable electronic structure
+- PBE showed highest ZPE energy, indicating inadequate vibrational scaling or missed contributions (most likely from Error of attempting to use D3BJ with parameters).
+- Corrected $ΔΗ_{corr}$ and $ΔG_{corr}$ followed trend of B3LYP > PBE0 > PBE, reinforcing B3LYP's stronger stabilization
+- Similar $ΔS_{final}$ indicate similar vibrational contributions across all functionals.
+- B3LYP overall showed most thermodynamically stable functional for this system with PBE0 being comparatively stable but with slightly less stability as indicated by higher energies. 
+ 
+Error when attempting to use D3BJ Dispersion Correction with PBE functional (Following DOI: 10.1063/1.4907719 and DOI: 10.1021/acs.jpclett.6b00780)
+
+From `.out` file 
+
+<img width="748" alt="image" src="https://github.com/user-attachments/assets/0560e288-487b-4fe9-9e8f-9c54cd5e3071" />
+
+
+Plotting IR Spectrum (using EXCEL)
+
+- From 0 to 2000 $cm^{-1}$
+
+     <img width="672" alt="image" src="https://github.com/user-attachments/assets/b3816504-659f-49e0-bf13-886255b8f2c1" />
+
+- From 0 to 500 $cm^{-1}$
+  
+    <img width="334" alt="image" src="https://github.com/user-attachments/assets/86c7ae69-1271-4d1b-8ec7-aa878963fa48" />
+
+  
 
 
 ## 2. Solvent Effect Analysis
