@@ -59,6 +59,7 @@ Things to Note:
   
 #### After Calculation
 - Check bottom of `.out` file to ensure calculation terminated
+  
 	<img width="509" alt="image" src="https://github.com/user-attachments/assets/4692d3a0-1eec-430a-951a-51a238e418d9" />
 
 - Use ChemCraft (Reccommended for ORCA users) or other visualizing software (Avogadro, VMD, MacmolPlt etc.,) to visualize optimized structures
@@ -66,6 +67,7 @@ Things to Note:
 - Takeaways from HYQ calculation:
   	- ΔE (in eV) was calculated as: $ΔΕ(eV) = (Ε_{functional} - E_{lowest}) x 27.2114 = (E_{first reported in .out} - E_{final single point energy})$
   	- $E_{final}$ located towards botton of .inp
+  	  
   	  <img width="615" alt="image" src="https://github.com/user-attachments/assets/1a8fbf7c-d9bc-4403-8c75-be5d0217fab0" />
        	- Python Script (attached to /script) was used to extract bond lengths and RMSD
   	    	- automated by parsing .xyz file to find the optimized coordinate and to reference for evaluating structural deviation (Make sure to know Atom Numbers, can visualize using Avogadro)
