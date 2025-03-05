@@ -230,7 +230,6 @@ From Frequency Calculation
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/afbbb6d5-d94e-447b-948b-71e9c08c1461" />
 
 Output Files
-
   
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/c2ebb716-2cbf-46f2-b6f5-307bafa82ef0" />
 
@@ -240,9 +239,9 @@ Spin Density of HYQ (visualized on VMD)
 
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/12fb790c-4484-4ba5-8961-cc5715dcec8a" />
 
-MO #29 (HOMO)   MO #30 (LUMO) 
-
-<img width="200" alt="image" src="https://github.com/user-attachments/assets/b3943210-f067-42d5-a5e7-1275f958519e" /> <img width="200" alt="image" src="https://github.com/user-attachments/assets/49f39231-ee9d-437b-95ae-8ef61015b13e" />
+| MO #29 (HOMO) |  MO #30 (LUMO) |
+| :---: | :---: |
+| <img width="200" alt="image" src="https://github.com/user-attachments/assets/b3943210-f067-42d5-a5e7-1275f958519e" /> | <img width="200" alt="image" src="https://github.com/user-attachments/assets/49f39231-ee9d-437b-95ae-8ef61015b13e" /> |
 
 
 - The isosurfaces appeared sliced for both spin density and MO because
@@ -254,7 +253,7 @@ MO #29 (HOMO)   MO #30 (LUMO)
   	`set all [atomselect top all]`
 Followed by
 
-<img width="250" alt="image" src="https://github.com/user-attachments/assets/b51a90df-82e8-4212-b71f-5cb38a39bfd7" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/b51a90df-82e8-4212-b71f-5cb38a39bfd7" />
 
 *** My struggle here was to show labels through the isosurfaces, I tried the following command amongst a few others but was not successful. Removed labels in the end after assuring which atoms corresponded to which labels aligned with .xyz file.
 
