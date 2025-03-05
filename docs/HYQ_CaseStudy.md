@@ -217,48 +217,51 @@ From Frequency Calculation
 
 ## 3. Electronic Structure Analysis
 
-**NBO (Natural Bond Analysis (Optional)** provides insight into electronic structure of molecules y describing its interactions in terms of localized orbitals.
+**NBO (Natural Bond Analysis (Optional)** provides insight into the electronic structure of molecules by describing its interactions in terms of localized orbitals.
 	Couldn’t run NBO on HYQ bc NBO is an extension of ORCA that has to be purchased… 
-	[If interested](https://nbo6.chem.wisc.edu/)
+ 
+[NBO Purchase Cite if Interested](https://nbo6.chem.wisc.edu/)
 
 #### MO Visualization (VMD for this tutorial)
 1. Generated .cube files by requesting from orca via single point energy calculation
   	For Keyword, `! RKS def2-SVP RIJCOSX LIBXC(B3LYP) TightSCF PrintBasis`
   	Under `%plots`
 
-   <img width="209" alt="image" src="https://github.com/user-attachments/assets/220d2952-6316-4a2e-a3e8-a459fece7a03" />
+   <img width="250" alt="image" src="https://github.com/user-attachments/assets/220d2952-6316-4a2e-a3e8-a459fece7a03" />
 
   - Used .xyz generated from GasPhase Frequency calculation done with B3LYP
 - Also tried split basis set (Used "def2-TZVP" for O)
 	
-  <img width="209" alt="image" src="https://github.com/user-attachments/assets/afbbb6d5-d94e-447b-948b-71e9c08c1461" />
+  <img width="250" alt="image" src="https://github.com/user-attachments/assets/afbbb6d5-d94e-447b-948b-71e9c08c1461" />
 
   Output Files
 
   
-<img width="249" alt="image" src="https://github.com/user-attachments/assets/c2ebb716-2cbf-46f2-b6f5-307bafa82ef0" />
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/c2ebb716-2cbf-46f2-b6f5-307bafa82ef0" />
 
 2. Load .xyz used for single point energy calculation as  "New Molecule" -> Loaded .cube files as "Visualization State"
 
 Spin Density of HYQ (visualized on VMD)
 
-<img width="440" alt="image" src="https://github.com/user-attachments/assets/12fb790c-4484-4ba5-8961-cc5715dcec8a" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/12fb790c-4484-4ba5-8961-cc5715dcec8a" />
 
-MO #29 (HOMO)
+MO #29 (HOMO)   MO #30 (LUMO) 
 
-<img width="200" alt="image" src="https://github.com/user-attachments/assets/b3943210-f067-42d5-a5e7-1275f958519e" />
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/b3943210-f067-42d5-a5e7-1275f958519e" /> <img width="200" alt="image" src="https://github.com/user-attachments/assets/49f39231-ee9d-437b-95ae-8ef61015b13e" />
 
-- Appears sliced for both spin density and MO because
-	- Isosurface was too big, when made to 0.5, it didn't appear "sliced"
-   	- Also made bond thicker, changed background, added labels to match the xyz file.
+
+- The isosurfaces appeared sliced for both spin density and MO because
+	- Isosurface was possibly too big, when made to 0.5, it didn't appear "sliced"
+ 		- Tried to regenerate the .cube file by rerunning single point energy calculation with different requested dimensions but did not show improvement.. 
+   	- Also made bonds thicker, changed background back and forth, added labels to see which atoms are lacking in electron density visibly.
  
 - adding labels to atoms (on VMD Main Tab, Click Extension -> Tk Console) and type
   	`set all [atomselect top all]`
   Followed by
 
-  ```  foreach index [$all get index] pos [$all get {x y z}] {
+  ```foreach index [$all get index] pos [$all get {x y z}] {
     draw text $pos $index
-} '''
+}'''
 
 Changed background to white: `color Display Background white`
 
