@@ -62,7 +62,7 @@ Things to Note:
 #### After Calculation of Geometry Optimization
 - Check bottom of `.out` file to ensure calculation terminated
   
-	<img width="300" alt="image" src="https://github.com/user-attachments/assets/4692d3a0-1eec-430a-951a-51a238e418d9" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/4692d3a0-1eec-430a-951a-51a238e418d9" />
 
 - Use ChemCraft (Reccommended for ORCA users) or other visualizing software (Avogadro, VMD, MacmolPlt etc.,) to visualize optimized structures
 
@@ -70,7 +70,7 @@ Things to Note:
   	- ΔE (in eV) was calculated as: $ΔΕ(eV) = (Ε_{functional} - E_{lowest}) x 27.2114 = (E_{first reported in .out} - E_{final single point energy})$
   	- $E_{final}$ located towards botton of .inp
   	  
-  	  <img width="615" alt="image" src="https://github.com/user-attachments/assets/1a8fbf7c-d9bc-4403-8c75-be5d0217fab0" />
+		<img width="350" alt="image" src="https://github.com/user-attachments/assets/1a8fbf7c-d9bc-4403-8c75-be5d0217fab0" />
  
         - $E_{initial} is found right under where it **first** sais SCF Converged
   	 
@@ -146,18 +146,18 @@ Error when attempting to use D3BJ Dispersion Correction with PBE functional (Fol
 
 From `.out` file 
 
-<img width="748" alt="image" src="https://github.com/user-attachments/assets/0560e288-487b-4fe9-9e8f-9c54cd5e3071" />
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/0560e288-487b-4fe9-9e8f-9c54cd5e3071" />
 
 
 Plotting IR Spectrum (using EXCEL)
 
 - From 0 to 2000 $cm^{-1}$
 
-     <img width="672" alt="image" src="https://github.com/user-attachments/assets/b3816504-659f-49e0-bf13-886255b8f2c1" />
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/b3816504-659f-49e0-bf13-886255b8f2c1" />
 
 - From 0 to 500 $cm^{-1}$
   
-    <img width="334" alt="image" src="https://github.com/user-attachments/assets/86c7ae69-1271-4d1b-8ec7-aa878963fa48" />
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/86c7ae69-1271-4d1b-8ec7-aa878963fa48" />
 
   
 
@@ -199,7 +199,9 @@ From Geometry Optimization
 
 
 From Frequency Calculation
+
 | Functional Name | Solvent | Final SCF Energy (Hartree) | ΔE (eV) | ZPE (kcal/mol) | $ΔΗ_{corr}$ (Eh) | $ΔG_{corr}$ (Eh) | $ΔS_{final}$ (kcal/mol) | Computational Time |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
 | B3LYP | Acetone | -382.2112371 | 272611.5679 | 68.15 | -382.095113 | -382.1330766 | 23.88 | 4 min 31.176 sec |
 | --- | DMSO | -382.2113271 | 272611.6321 | 68.15 | -382.095113 | -382.1331676 | 23.88 | 4 min 30.689 sec |
 | --- | Hexane | -382.2033214 | 272605.9222 | 68.21 | -382.0869864 | -382.1250861 | 23.91 | 4 min 31.679 sec |
