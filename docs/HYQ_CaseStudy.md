@@ -35,9 +35,8 @@ References for HYQ Studies:
 - Compare structural and electronic properties in acetonitrile, DMSO, n-hexane, and water
 - Conduct calculations using PBE, PBE0, and B3LYP functionals to examine solvent and functional interplay
 
-3. MO and NBO analysis
+3. MO and Electron Density analysis
 - Extract MO data using different ORCA's built-in MO printing commands
-- Perform single-point energy calculation for NBO analysis 
 - Investigate electronic structure changes in different solvent environments
 
 ------
