@@ -1,31 +1,24 @@
-# ORCA 6 Hydroquinone DFT Calculations
+# ORCA 6 DFT Calculations Case Studies
 
-### This repository contains Density Functional Theory (DFT) calculations of Hydroquinone using ORCA 6. 
+### This repository contains different case studies of Density Functional Theory (DFT) calculations done on ORCA 6. 
 
 This serves as:
 
-- A portfolio project showcasing computational chemistry expertise.
-- A tutorial for setting up and running ORCA 6 calculations.
+- A portfolio project showcasing computational chemistry skills.
+- A tutorial for running ORCA 6 calculations and performing post calculation visualization using ChemCraft and VMD.
 - A guide for setting up a virtual node for local ORCA computations.
 
 ## Features
-- ORCA 6 setup guide (local and HPC)  
-- Step-by-step DFT tutorial for beginners  
+- ORCA 6 input file and submission script setup guide (local and HPC)
+- Coordinate extraction for setting up calculations on Avogadro 1
+- Step-by-step DFT tutorial using ORCA 6
 - Hydroquinone case study (optimization, frequency, TDDFT)  
 - Python & Shell scripts for automation  
-- Data visualization & analysis tools  
+- Data visualization & analysis tools (VMD, ChemCraft)
 
-Compound of Interest for This Demo Will be Hydroquinone **(HYQ)**
-
-Initial Structure is built on Avogadro and coordinates are extracted by selecting Extensions -> ORCA -> Generate ORCA Input then Copy Pasting just the coordinates (ex: After "*0 1... for HYQ") into a separate .xyz file.
-
-Calculation is run on ORCA 6, downloaded on Linux PC (Ubuntu 64-bit Virtual Node built on Virtualbox).
+Compound of Interest for This Demo Will be Hydroquinone **(HYQ)** and **Maleimide**
 
 
-One thing interesting that was observed towards the end of optimization step of PBE with specifically inputted parameters for D3BJ damping.
+Calculation was done on ORCA 6 Linux Version, downloaded and uploaded to both the virtual node and the OSC cluster.
 
-<img width="490" alt="image" src="https://github.com/user-attachments/assets/be49aeee-fad4-471d-bb76-498c168da15e" /> <img width="730" alt="image" src="https://github.com/user-attachments/assets/196c8cc3-e4c6-4d42-b4a1-04b8544b3848" />
-
-
-
-
+Dr. Frank Nesse from Max-Planck-Institut für Kohlenforschung and Dr. Chris Cramer from the University of Minnesota are my primary source of learning the principles of Computational/Quantum Chemistry.
