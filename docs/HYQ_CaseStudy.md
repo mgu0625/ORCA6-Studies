@@ -67,14 +67,14 @@ Things to Note:
 - Use ChemCraft (Reccommended for ORCA users) or other visualizing software (Avogadro, VMD, MacmolPlt etc.,) to visualize optimized structures
 
 - Takeaways from HYQ calculation:
-  	- ΔE (in eV) was calculated as: $ΔΕ(eV) = (Ε_{functional} - E_{lowest}) x 27.2114 = (E_{first reported in .out} - E_{final single point energy})$
+  	- ΔE (in eV) was calculated as: $ΔΕ(eV) = (Ε_{functional} - E_{lowest}) x 27.2114 = (E_{f} - E_{i})$
   	- $E_{final}$ located towards botton of .inp
   	  
 		<img width="350" alt="image" src="https://github.com/user-attachments/assets/1a8fbf7c-d9bc-4403-8c75-be5d0217fab0" />
  
-        - $E_{initial}$ is found right under where it **first** sais SCF Converged
+        - $E_{initial}$ is found right under where it **first** mentions SCF Converged
   	 
-  	       <img width="400" alt="Screenshot 2025-03-03 at 9 05 24 PM" src="https://github.com/user-attachments/assets/c297f681-8743-4bac-a403-46be79979dc4" />
+       <img width="400" alt="Screenshot 2025-03-03 at 9 05 24 PM" src="https://github.com/user-attachments/assets/c297f681-8743-4bac-a403-46be79979dc4" />
 
 
        	- Python Script (attached to /script) was used to extract bond lengths and RMSD
