@@ -227,14 +227,14 @@ From Frequency Calculation
   	For Keyword, `! RKS def2-SVP RIJCOSX LIBXC(B3LYP) TightSCF PrintBasis`
   	Under `%plots`
 
-   <img width="250" alt="image" src="https://github.com/user-attachments/assets/220d2952-6316-4a2e-a3e8-a459fece7a03" />
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/220d2952-6316-4a2e-a3e8-a459fece7a03" />
 
   - Used .xyz generated from GasPhase Frequency calculation done with B3LYP
 - Also tried split basis set (Used "def2-TZVP" for O)
-	
-  <img width="250" alt="image" src="https://github.com/user-attachments/assets/afbbb6d5-d94e-447b-948b-71e9c08c1461" />
 
-  Output Files
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/afbbb6d5-d94e-447b-948b-71e9c08c1461" />
+
+Output Files
 
   
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/c2ebb716-2cbf-46f2-b6f5-307bafa82ef0" />
@@ -257,11 +257,18 @@ MO #29 (HOMO)   MO #30 (LUMO)
  
 - adding labels to atoms (on VMD Main Tab, Click Extension -> Tk Console) and type
   	`set all [atomselect top all]`
-  Followed by
+Followed by
 
-  ```foreach index [$all get index] pos [$all get {x y z}] {
-    draw text $pos $index
-}'''
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/b51a90df-82e8-4212-b71f-5cb38a39bfd7" />
+
+*** My struggle here was to show labels through the isosurfaces, I tried the following command amongst a few others but was not successful. Removed labels in the end after assuring which atoms corresponded to which labels aligned with .xyz file.
+
+`display depthcue off`, `graphics top on`
+
+Tried verifying and redrawing labels but also didn't work.
+
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/c747d8cc-7935-4ff7-bc0f-e0a4f8936064" />
+
 
 Changed background to white: `color Display Background white`
 
