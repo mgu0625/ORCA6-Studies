@@ -1,17 +1,17 @@
 
 # **Useful Resources:**
-    - **Dr. Frank Nesse**, Introduction to Quantum Chemical Methods: [YouTube](https://www.youtube.com/watch?v=-ThgCJgsi_s&t=302s)
-    - **Dr. Chris Cramer**, DFT Lecture Series: [YouTube](https://www.youtube.com/watch?v=ofyr1GyEZsU&list=PL_SubSFAvBX6041nSsQUdpcDOE9MoLc4d)
-    - ORCA Library [Link](https://sites.google.com/site/orcainputlibrary/home)
-    - ORCA 6 Manual [Link](https://www.faccts.de/docs/orca/6.0/manual/)
-    - ORCA Forum [Link](https://orcaforum.kofo.mpg.de/app.php/portal )
+- **Dr. Frank Nesse**, Introduction to Quantum Chemical Methods: [YouTube](https://www.youtube.com/watch?v=-ThgCJgsi_s&t=302s)
+- **Dr. Chris Cramer**, DFT Lecture Series: [YouTube](https://www.youtube.com/watch?v=ofyr1GyEZsU&list=PL_SubSFAvBX6041nSsQUdpcDOE9MoLc4d)
+- ORCA Library [Link](https://sites.google.com/site/orcainputlibrary/home)
+- ORCA 6 Manual [Link](https://www.faccts.de/docs/orca/6.0/manual/)
+- ORCA Forum [Link](https://orcaforum.kofo.mpg.de/app.php/portal )
 
 ------
 ## Important things to consider when doing Computational work
-    - “Always be critical of your results because in the end of the day the answer will always come from experiment” -Dr. Nesse
-    - “People solve problems” aka “do not trust blind calculations” – Dr. Nesse
-    - Rely on the ORCA Library and the ORCA 6 Manual, they will be your best friends through the process. Just the sections that is necessary, use CTRL + F or the search bar on the ORCA websites.
-    - There is an ORCA forum in case there’s a problem in which the manual or other forums were not helpful, MPI team is very responsive.
+- “Always be critical of your results because in the end of the day the answer will always come from experiment” -Dr. Nesse
+- “People solve problems” aka “do not trust blind calculations” – Dr. Nesse
+- Rely on the ORCA Library and the ORCA 6 Manual, they will be your best friends through the process. Just the sections that is necessary, use CTRL + F or the search bar on the ORCA websites.
+- There is an ORCA forum in case there’s a problem in which the manual or other forums were not helpful, MPI team is very responsive.
 
 ----
 ## When DFT is Necessary and Useful
