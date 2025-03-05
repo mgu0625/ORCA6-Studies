@@ -62,7 +62,7 @@ Things to Note:
 #### After Calculation of Geometry Optimization
 - Check bottom of `.out` file to ensure calculation terminated
   
-	<img width="509" alt="image" src="https://github.com/user-attachments/assets/4692d3a0-1eec-430a-951a-51a238e418d9" />
+	<img width="300" alt="image" src="https://github.com/user-attachments/assets/4692d3a0-1eec-430a-951a-51a238e418d9" />
 
 - Use ChemCraft (Reccommended for ORCA users) or other visualizing software (Avogadro, VMD, MacmolPlt etc.,) to visualize optimized structures
 
@@ -116,13 +116,13 @@ Things to Note:
 #### After HYQ Frequency Calculations 
 - vibrational frequencies (towards bottom of `.out`) was checked to make sure there's no imaginary frequencies
 
-<img width="479" alt="image" src="https://github.com/user-attachments/assets/386be11e-0a6f-4b74-96c7-7990f1027027" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/386be11e-0a6f-4b74-96c7-7990f1027027" />
 
 - Zero Point Energy (ZPE) correction found towards bottom of `.out` file
 
-  <img width="655" alt="image" src="https://github.com/user-attachments/assets/a1d3c88e-e20a-4383-80df-afab1f241e28" />
+  <img width="300" alt="image" src="https://github.com/user-attachments/assets/a1d3c88e-e20a-4383-80df-afab1f241e28" />
 
-- Recorded $ΔΗ_{corr}, ΔG_{corr} and ΔS values
+- Recorded $ΔΗ_{corr}$, $ΔG_{corr}$ and ΔS values
 
 | Functional Name | Aux Basis | ΔE(eV) | Final SCF Energy (Eh) | ZPE (kcal/mol) | $ΔΗ_{corr}$ (Eh) | $ΔG_{corr}$ (Eh) | $ΔS_{final}$ (kcal/mol) | Computational Time |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -182,5 +182,82 @@ Plotting IR Spectrum (using EXCEL)
 
 From Geometry Optimization
 
+| Functional Name | Solvent | Final SCF Energy (Hartree) | ΔE (eV) | Computational Time |
+| :---: | :---: | :---: | :---: | :---: |
+| B3LYP | Acetone | -382.208227388075 | -0.241367096 | 4 min 14.320 sec |
+| --- | DMSO | -382.2113271 | -0.241297194 | 4 min 14.413 sec |
+| --- | Hexane | -382.2033213 | -0.248398331 | 4 min 15.613 sec | 
+| --- | Water | -382.2114998 | -0.241175968 | 4 min 16.740 sec | 
+| PBE0| Acetone | -381.9986297 | -0.248162775 | 4 min 31.259 sec |
+| --- | DMSO | -381.9987252 | -0.248079807 | 4 min 58.527 sec |
+| --- | Hexane | -381.9902326 | -0.257536544 | 4 min 14.743 sec |
+| --- | Water | -381.9989082 | -0.247910611 | 8 min 55.153 sec |
+| PBE | Acetone | -381.989019 | -0.381402812 | 1 min 13.173 sec |
+| --- | DMSO | -381.989109 | -0.568711078 | 1 min 13.914 sec |
+| --- | Hexane | -381.981134 | -0.575499805 | 1 min 8.644 sec |
+| --- | Water | -381.9892816 | -0.568597143 | 1 min 13.496 sec |
 
-    
+
+From Frequency Calculation
+| Functional Name | Solvent | Final SCF Energy (Hartree) | ΔE (eV) | ZPE (kcal/mol) | $ΔΗ_{corr}$ (Eh) | $ΔG_{corr}$ (Eh) | $ΔS_{final}$ (kcal/mol) | Computational Time |
+| B3LYP | Acetone | -382.2112371 | 272611.5679 | 68.15 | -382.095113 | -382.1330766 | 23.88 | 4 min 31.176 sec |
+| --- | DMSO | -382.2113271 | 272611.6321 | 68.15 | -382.095113 | -382.1331676 | 23.88 | 4 min 30.689 sec |
+| --- | Hexane | -382.2033214 | 272605.9222 | 68.21 | -382.0869864 | -382.1250861 | 23.91 | 4 min 31.679 sec |
+| --- | Water | -382.2114998 | 272611.7553 | 68.15 | -382.0952886 | -382.133342 | 23.88 | 4 min 32.873 sec |
+| PBE0 | Acetone | -381.9986297 | 272459.926 |	68.86 | -381.8813292 | -381.9193066 | 23.83 | 4 min 1.376 sec |
+| --- | DMSO | -381.9987252 | 272459.9942 | 68.86 | -381.8814265 | -381.9194032 | 23.83 |4 min 24.306 sec |
+| --- | Hexane | -381.9902326 | 272453.937 | 68.93 | -381.8727854 | -381.9108157 | 23.86 | 4 min 20.503 sec 
+| --- | Water |	-381.9989082 | 272460.1247 | 68.86 | -381.8816131 | -381.9195885 | 23.83 | 4 min 23.636 sec |
+| PBE| Acetone | -381.989019 | 272437.7667 | 66.52 | -381.8752856 | -381.913542 | 24.01 | 2 min 40.605 sec |
+| --- | DMSO | -381.989109 | 272445.5524 | 66.52 | -381.8753775 | -381.9136338 | 24.01 | 1 min 37.322 sec |
+| --- | Hexane | -381.981134 | 272439.8597 | 66.57 | -381.8672963 | -381.9055993 | 24.04 | 1 min 37.127 sec |
+| --- | Water | -381.9892816 | 272445.6756 | 66.52 | -381.8755527 | -381.9138079 | 24.01 | 1 min 37.147 sec |
+
+## 3. Electronic Structure Analysis
+
+**NBO (Natural Bond Analysis (Optional)** provides insight into electronic structure of molecules y describing its interactions in terms of localized orbitals.
+	Couldn’t run NBO on HYQ bc NBO is an extension of ORCA that has to be purchased… 
+	[If interested](https://nbo6.chem.wisc.edu/)
+
+#### MO Visualization (VMD for this tutorial)
+1. Generated .cube files by requesting from orca via single point energy calculation
+  	For Keyword, `! RKS def2-SVP RIJCOSX LIBXC(B3LYP) TightSCF PrintBasis`
+  	Under `%plots`
+
+   <img width="209" alt="image" src="https://github.com/user-attachments/assets/220d2952-6316-4a2e-a3e8-a459fece7a03" />
+
+  - Used .xyz generated from GasPhase Frequency calculation done with B3LYP
+- Also tried split basis set (Used "def2-TZVP" for O)
+	
+  <img width="209" alt="image" src="https://github.com/user-attachments/assets/afbbb6d5-d94e-447b-948b-71e9c08c1461" />
+
+  Output Files
+
+  
+<img width="249" alt="image" src="https://github.com/user-attachments/assets/c2ebb716-2cbf-46f2-b6f5-307bafa82ef0" />
+
+2. Load .xyz used for single point energy calculation as  "New Molecule" -> Loaded .cube files as "Visualization State"
+
+Spin Density of HYQ (visualized on VMD)
+
+<img width="440" alt="image" src="https://github.com/user-attachments/assets/12fb790c-4484-4ba5-8961-cc5715dcec8a" />
+
+MO #29 (HOMO)
+
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/b3943210-f067-42d5-a5e7-1275f958519e" />
+
+- Appears sliced for both spin density and MO because
+	- Isosurface was too big, when made to 0.5, it didn't appear "sliced"
+   	- Also made bond thicker, changed background, added labels to match the xyz file.
+ 
+- adding labels to atoms (on VMD Main Tab, Click Extension -> Tk Console) and type
+  	`set all [atomselect top all]`
+  Followed by
+
+  ```  foreach index [$all get index] pos [$all get {x y z}] {
+    draw text $pos $index
+} '''
+
+Changed background to white: `color Display Background white`
+
+Make Bonds Thicker: ` mol modstyle 0 0 Bonds 0.08`
