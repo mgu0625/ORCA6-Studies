@@ -72,9 +72,9 @@ Things to Note:
   	  
 		<img width="350" alt="image" src="https://github.com/user-attachments/assets/1a8fbf7c-d9bc-4403-8c75-be5d0217fab0" />
  
-        - $E_{initial} is found right under where it **first** sais SCF Converged
+        - $E_{initial}$ is found right under where it **first** sais SCF Converged
   	 
-  	       <img width="716" alt="Screenshot 2025-03-03 at 9 05 24 PM" src="https://github.com/user-attachments/assets/c297f681-8743-4bac-a403-46be79979dc4" />
+  	       <img width="400" alt="Screenshot 2025-03-03 at 9 05 24 PM" src="https://github.com/user-attachments/assets/c297f681-8743-4bac-a403-46be79979dc4" />
 
 
        	- Python Script (attached to /script) was used to extract bond lengths and RMSD
