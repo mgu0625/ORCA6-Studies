@@ -151,13 +151,9 @@ From `.out` file
 
 Plotting IR Spectrum (using EXCEL)
 
-- From 0 to 2000 $cm^{-1}$
+- From 0 to 2000 $cm^{-1}$      From 0 to 500 $cm^{-1}$
 
-<img width="350" alt="image" src="https://github.com/user-attachments/assets/b3816504-659f-49e0-bf13-886255b8f2c1" />
-
-- From 0 to 500 $cm^{-1}$
-  
-<img width="350" alt="image" src="https://github.com/user-attachments/assets/86c7ae69-1271-4d1b-8ec7-aa878963fa48" />
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/b3816504-659f-49e0-bf13-886255b8f2c1" /> <img width="300" alt="image" src="https://github.com/user-attachments/assets/86c7ae69-1271-4d1b-8ec7-aa878963fa48" />
 
   
 
