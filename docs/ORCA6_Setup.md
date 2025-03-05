@@ -89,11 +89,10 @@ Make sure to get account and login from advisor.
 1. Login to OSC:
 `ssh username@pitzer.osc.edu`
 
-2. Transfering files to/from OSC (separate tab, from personal computer):
-***From Personal Experience, ALWAYS Reccommend to Transfer Files to/from Personal Computer Instead of from Cluster***
+2. Transferring files to/from OSC (separate tab, from personal computer):
+***From Personal Experience, ALWAYS Recommend to Transfer Files to/from Personal Computer Instead of from Cluster***
 
-If Logged into Cluster CTRL+T to open new tab. From the new tab:
-
+If logged into Cluster CTRL+T to open new tab. From the new tab:
 	If copying from personal computer to cluster (`scp -r ...` for transfering entire file)
 		- `scp /make/sure/to/link/entire/pathname.inp username@pitzer.osc.edu:/link/to/entire/path.inp`
 		- paste directly to a new file (`nano filename.inp` or `vi filename.inp`)
