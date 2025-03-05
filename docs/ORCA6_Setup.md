@@ -16,7 +16,6 @@ This guide explains how to install and run ORCA 6 on both a **personal computer*
   - **Memory allocated**: 32 GB  
   - **Disk space**: 100 GB  
   - **Operating System**: Ubuntu 22.04  
-  - **Shared Folder**: `/users/PCON0421/mgutashiro/orca_qc/`
 
 ### **Installing ORCA 6** and Running Calculations on Personal PC (Linnux)
 1. **Download ORCA 6** from the official ORCA
