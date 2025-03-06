@@ -15,37 +15,37 @@
 
 ----
 ## When DFT is Necessary and Useful
-    - Electronic Structure Calculations: to determine MOs, spin-states and electronic configurations
-    - Reaction Mechanisms: Models TS, ΔEa and reaction pathways
-    - Spectroscopy Predictions: Simulate UV-Vis, IR, Raman, NMR, and EPR spectra
-    - Material Science and Catalysis: Investigate Surface Interactions, Band Gaps, and absorption energies
-    - Thermodynamic Properties: Calculates enthalpy, entropy, Gibbs free energy, and binding energies
+- Electronic Structure Calculations: to determine MOs, spin-states and electronic configurations
+- Reaction Mechanisms: Models TS, ΔEa and reaction pathways
+- Spectroscopy Predictions: Simulate UV-Vis, IR, Raman, NMR, and EPR spectra
+- Material Science and Catalysis: Investigate Surface Interactions, Band Gaps, and absorption energies
+- Thermodynamic Properties: Calculates enthalpy, entropy, Gibbs free energy, and binding energies
 
  ----
 ## Best Systems to work on:
-    - Transitional Metal Complexes: Effectve for ligand field analysis, spin states, and redox chemistry (Dr. Nesse has AMAZING videos on this)
-    - Organic Molecules: Useful for electronic structure, rxn barriers, and conformational analysis
-    - Periodic Systems: Suitable for semiconductors, metals and surfaces with plane-wave basis sets.
-    - Weakly correlated Systems: Performs well for non-strongly correlated molecules with moderate electron delocalization
+- Transitional Metal Complexes: Effectve for ligand field analysis, spin states, and redox chemistry (Dr. Nesse has AMAZING videos on this)
+- Organic Molecules: Useful for electronic structure, rxn barriers, and conformational analysis
+- Periodic Systems: Suitable for semiconductors, metals and surfaces with plane-wave basis sets.
+- Weakly correlated Systems: Performs well for non-strongly correlated molecules with moderate electron delocalization
 
 ----
 ## Limitations of DFT:
-    - Accurately Depends on Functional Choice: Struggles with dispersion, self-interaction errors, and delocalization errors
-    - Proof for strongly correlated systems: Fails for transitional metals with multi-reference character
-    - Limited ES Calculations: TDDFT works for singlet states but struggles with double excitations and charge transfer
-    - Computational Cost: Scales poorly for very large systems compared to semi-empirical or force fields methods
-    - Relies on Approximate Exchange Correlation Functionals: No universal functional, requiring empirical tuning
+- Accurately Depends on Functional Choice: Struggles with dispersion, self-interaction errors, and delocalization errors
+- Proof for strongly correlated systems: Fails for transitional metals with multi-reference character
+- Limited ES Calculations: TDDFT works for singlet states but struggles with double excitations and charge transfer
+- Computational Cost: Scales poorly for very large systems compared to semi-empirical or force fields methods
+- Relies on Approximate Exchange Correlation Functionals: No universal functional, requiring empirical tuning
 
 ----
 ## System Sizes:
-    - Small System: 1-20 atoms
-    - Medium System: 20-100 atoms
-    - Large System: 100+ atoms
+- Small System: 1-20 atoms
+- Medium System: 20-100 atoms
+- Large System: 100+ atoms
 
 ----
 ## Choosing Functionals: [Helpful Link](https://sites.google.com/site/orcainputlibrary/dft-calculations)
-    - Definition: Functionals in DFT are mathematical expression that approximates the exchange-correlation energy, EXC which accounts for electron-electron interactions.
-    - Functionals are categorized based on complexity and accuracy, progressing from Local Density Approximation (LDA) → Generalized Gradient Approximation (GGA) → meta-GGA → hybrid GGA etc
+- Definition: Functionals in DFT are mathematical expression that approximates the exchange-correlation energy, EXC which accounts for electron-electron interactions.
+- Functionals are categorized based on complexity and accuracy, progressing from Local Density Approximation (LDA) → Generalized Gradient Approximation (GGA) → meta-GGA → hybrid GGA etc
 
 **** For this tutorial, GGA, meta-GGA and hybrid-GGA will be used to calculate Geometry Optimization and Frequency calculation to compare energy values. 
 
