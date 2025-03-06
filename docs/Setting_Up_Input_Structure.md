@@ -69,7 +69,8 @@ first number represents the charge of compound, second number represents the mul
 
 Format for .xyz file is total atom number in line 1, comment in line 2, and the pasted coordinates start from line 3.
 
-<img width="350" alt="image" src="https://github.com/user-attachments/assets/1ba42307-ff52-4da1-8815-79473ddbbcad" />
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/f7743aff-bdbc-45a0-bce3-8f586dee5f84" />
+
 
 Save file in **same directory as .inp file** for running ORCA calculations.
 
