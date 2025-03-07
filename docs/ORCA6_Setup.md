@@ -63,8 +63,11 @@ Add this to `~/.bashrc` or `~/.bash_profile`):
 - OS: Ubuntu 22.04 Jellyfish
 
 ### Running ORCA in Virtual Machine
-All calculations were run using 1 core (`nprocs 1`)
+All calculations for HYQ were run using 1 core (`nprocs 1`)
 	- Means ORCA calculations were performed on a **single processor core**, despite the VM having 4 cores available. 
+
+For Maleimide (Monomer and up to dimer) was successful at calculating on multiple cores (up to 4 for my PC). 
+	- Make sure mpi run is installed, I had some issues initially running parallel runs.
 
 Reason to why only 1 core was used:
 - `RIJCOSX` approximation works best with using 1 core for my system (personal experience)
@@ -90,15 +93,17 @@ Make sure to get account and login from advisor.
 `ssh username@pitzer.osc.edu`
 
 2. Transferring files to/from OSC (separate tab, from personal computer):
-***From Personal Experience, ALWAYS Recommend to Transfer Files to/from Personal Computer Instead of from Cluster***
+***From Personal Experience, ALWAYS Recommend to Transfer Files to/from Personal Computer Instead of copying from Cluster***
 
 If logged into Cluster CTRL+T to open new tab. From the new tab:
 	If copying from personal computer to cluster (`scp -r ...` for transfering entire file)
-		- `scp /make/sure/to/link/entire/pathname.inp username@pitzer.osc.edu:/link/to/entire/path.inp`
+		- `scp /make/sure/to/link/entire/pathname.inp username@pitzer.osc.edu:/link/to/entire/path/filename.inp`
 		- paste directly to a new file (`nano filename.inp` or `vi filename.inp`)
 	If copying from cluster to personal computer
-		- `scp username@pitzer.osc.edu:/link/to/entire/pathname.inp /link/to/path/you/want.inp`
+		- `scp username@pitzer.osc.edu:/link/to/entire/pathname.inp /link/to/path/you/want/filename.inp`
 		- paste directly to a new file
+  		- use `scp -r ...` if copying entire file
+    			- always recommended to copy file somewhere on PC or on a cloud drive such as OneDrive than deleting files from cluster.
 
 3. Make Submission Script for Calculation:
 Example Script is located in input_files
