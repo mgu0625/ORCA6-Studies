@@ -20,7 +20,8 @@ The most common formats are:
 
 #### Step 1: Modify ORCA Input File to Generate MO Files
 
-INSERT PHOTO
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/1d0cdfea-0cc3-4543-8afa-28001922b7b8" />
+
 
 After running ORCA calculations, would generate the requested .cube files.
 
