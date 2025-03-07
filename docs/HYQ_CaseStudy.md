@@ -1,4 +1,4 @@
-# Hydroquinone (HYQ) Computational Case Study
+# Hydroquinone (HYQ) ORCA 6 Computational Demonstration
 
 ### 1 Hartree (Eh) = 27.2114 eV = 630 kcal/mol = 2600 kJ / mol = $2.2 x 10^5 cm^{-1}$ = 1/13.6 Bohr
 
