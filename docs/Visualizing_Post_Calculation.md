@@ -25,7 +25,8 @@ The most common formats are:
 
 After running ORCA calculations, would generate the requested .cube files.
 
-INSERT PHOTO
+<img width="248" alt="image" src="https://github.com/user-attachments/assets/f56f0176-9fa0-4928-a786-87dac8021b7a" />
+
 
 ------
 
@@ -38,9 +39,16 @@ INSERT PHOTO
 
 2. Click "File" → "New Molecule"
 
-3. Select your ORCA ".xyz file" and click "Load" 
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/e26393a0-b110-4647-823c-447ff1636f75" />
 
-4. Click "Load Data" and select the ".cube" file (HOMO/LUMO)
+3. Click "Browse" on new tab than select the ORCA generated ".xyz file" and click "Load" 
+
+4. Click "Load Data" and select the ".cube" files (HOMO/LUMO, spin density, electron density, etc)
+
+Should see molecule on "Open GL Display" Tab
+
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/80c8bf5e-082a-4313-a0a1-bce390a029e5" />
+
 
 #### Step 3: Display the MO Surface
 
@@ -48,9 +56,37 @@ INSERT PHOTO
 
 2. Set Drawing Method to "Isosurface"
 
+Select Create Rep -> Coloring Method -> Select Volume 
+
+Select .cube file in the center (If choosing MO file, create another representation and make isovalue negative)
+
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/251f085c-80fa-4ec2-bc3d-07da433e48f2" /> <img width="250" alt="image" src="https://github.com/user-attachments/assets/584ccdb4-c9ca-4cb7-b00a-fdc295cfedce" />
+
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/636b118c-1735-488f-b3e5-e43d4a12bc3c" />
+
+Shows (From Electron density file):
+
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/2c620f32-21d4-4196-9ed5-32a0db14e16a" />
+
+
+
 3. Adjust the Isovalue to control the MO shape
 
 4. Change Coloring Method to **"Volume"**
+
+Displaying labels on atoms
+
+Open console from VMD Main Tab
+
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/98d1ce9d-1a68-4a67-b096-a389ce9899d4" />
+
+This script worked!
+
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/3dbd2fa2-8562-4396-9923-695e30a5b4e7" />
+
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/6da60de5-475c-4bce-943d-6cd5d39bee9d" /> <img width="250" alt="image" src="https://github.com/user-attachments/assets/e077a300-db79-47f9-bfb8-058c32fd9ae5" />
+
+
 
 ----------
 
