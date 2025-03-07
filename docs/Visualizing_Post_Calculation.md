@@ -117,7 +117,31 @@ Chemcraft allows you to directly open ORCA **".out"** files or use **".molden"**
 
 --------
 
-## 4. Summary & Next Steps
+## 4. Pasting Data on EXCEL
+
+.out file data from ORCA6 gets stored as space separated list
+
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/18603307-fed5-474f-923f-aca22f8435f4" />
+
+Once data is pasted, click on data tab -> Click Text to Columns (**Make sure entire column is selected before clicking Text to Columns**)
+
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/0201b083-7cf6-4e43-bf99-fd3ec17eb6c1" />
+
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/a096858c-ee03-4d67-8b9e-32e5103de795" />
+
+Click Next
+
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/61e7eda8-99e8-4cc8-b144-c74ffa747092" />
+
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/2285fdc6-a048-4144-be4d-940b6aff0393" />
+
+- Βecause mode is listed as "6:", the mode gets converted to time, idk how to fix that besides delecting the entire column and manually adding the numbers myself..
+
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/87e23647-9d86-426d-9463-21ba9b4e711e" />
+
+
+
+## 5. Summary & Next Steps
 
 Generate MO visualization files (.png, .jpeg) for showcasing :)
 
@@ -126,4 +150,12 @@ Make sure orbitals (Isosurfaces) looks normal before proceeding to next calculat
 ------
 
 Resources for Advanced post-processing:
+
+[Orca Library on Visualization](https://sites.google.com/site/orcainputlibrary/visualization-and-printing)
+
+[Density Analysis](https://sites.google.com/site/orcainputlibrary/orbital-and-density-analysis)
+
+[GUI Tutorial](https://www.faccts.de/docs/orca/6.0/tutorials/first_steps/GUI.html)
+
+
 
