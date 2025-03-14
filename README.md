@@ -20,6 +20,7 @@ This serves as:
 --------
 
 # Repository Contents
+
 ## 1. DFT Tutorial: Hydroquinone (HYQ) Case Study
 
 A step-by-step tutorial demonstrating essential ORCA 6 calculations on HYQ:
