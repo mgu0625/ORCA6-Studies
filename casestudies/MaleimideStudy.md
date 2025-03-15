@@ -75,6 +75,11 @@ Key Observations:
 - Gibbs free energy (ΔG) confirms thermodynamic stability.
 - Dipole moment of 4.52 Debye reinforces stronger intermolecular interactions in the dimer.
 
+<img width="411" alt="image" src="https://github.com/user-attachments/assets/7332bdcd-32f8-4e70-9d5d-7343c5b49086" />
+
+ Infrared (IR) spectra comparison of the maleimide monomer (blue) and dimer (orange). The dimer exhibits a redshift and intensified carbonyl stretching mode (~1854 cm-1) compared to monomer (~1843 cm-1), indicating strong intermolecular interactions.
+
+
 #### TDDFT Results
 TDDFT Maleimide Monomer
 
@@ -98,6 +103,26 @@ TDDFT Mameimide Dimer Key observations:
 
 These results provide insight into how maleimide undergoes photodimerization, with ongoing relaxed TDDFT calculations aimed at further refining the excited-state potential energy surfaces (PES).
 
+<img width="311" alt="image" src="https://github.com/user-attachments/assets/4bfcc001-cb4a-4908-9369-7f687429efa6" />
+
+UV-Vis Absorption Spectrum of Monomer Runs 1 and 2 generated from TDDFT Calculation on ORCA 6 and plotted using Python.
+
+
+<img width="335" alt="image" src="https://github.com/user-attachments/assets/03c3e2a5-c933-4ffd-888a-20a40448183d" />
+
+UV-Vis Absorption Spectrum of Monomer Run 2 and Dimer generated from TDDFT Calculation on ORCA 6 and plotted using Python.
+
+
+<img width="383" alt="image" src="https://github.com/user-attachments/assets/99cef482-1c01-48ec-a5b3-2e2a81789d91" />
+
+UV-Vis Absorption Spectrum of Monomer Run 3 generated from TDDFT Calculation on ORCA 6 and plotted using Python.
+
+
+<img width="313" alt="image" src="https://github.com/user-attachments/assets/3ff08dad-c6de-4c2f-be91-501a36117ded" />
+
+Excited-State Energy Diagram for Monomer and Dimer Runs generated from TDDFT Calculation on ORCA 6 and plotted using Python.
+
+
 
 Citation:
 1.	 Neese, F. Software update: the ORCA program system, version 5.0. WIREs Comput. Mol. Sci. 2022, 12 (1), e1606. https://doi.org/10.1002/wcms.1606. 
@@ -109,3 +134,6 @@ Citation:
 7.	Marenich, A. V.; Cramer, C. J.; Truhlar, D. G. Universal solvation model based on solute electron density and a continuum model of the solvent defined by the bulk dielectric constant and atomic surface tensions. J. Phys. Chem. B 2009, 113, 6378–6396. https://doi.org/10.1021/jp810292n. 
 8.	Lehtola, S.; Steigemann, C.; Oliveira, M. J. T.; Marques, M. A. L. Recent developments in Libxc - A comprehensive library of functionals for density functional theory. Software X 2018, 7, 1–5. https://doi.org/10.1016/j.softx.2017.11.002. 
 9.	Valeev, E. F. Libint: A library for the evaluation of molecular integrals of many-body operators over Gaussian functions, Version X.Y.Z. http://libint.valeyev.net/.
+
+
+© 2025 M.G.Utashiro. All rights reserved. This document and its contents, including computational results and analyses, are provided for educational and research purposes. Redistribution, modification, or commercial use without explicit permission from the author is prohibited. Proper citation is required when referencing this work.
