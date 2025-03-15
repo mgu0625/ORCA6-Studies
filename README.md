@@ -1,19 +1,10 @@
 # ORCA 6 DFT Calculations Case Studies
 
-## Overview
-
-This repository contains case studies of Density Functional Theory (DFT) calculations performed using ORCA 6. It serves multiple purposes: 
-- A portfolio for running **ORCA 6** computational chemistry skills in electronic structure calculations.
-- A tutorial for running ORCA 6 calculations and performing post-calculation visualization with **ChemCraft** and **VMD**.
-- A guide for setting up a **virtual node** for local ORCA computations
-- A reference for setting up various types of DFT calculations, including **Broken Symmetry**, **Transition State Optimization**, and **Excited-State Studies**
-
-  
 ### This repository contains different case studies of Density Functional Theory (DFT) calculations done on ORCA 6. 
 
 This serves as:
 
-- A portfolio project showcasing computational chemistry skills.
+- A portfolio project showcasing computational chemistry skills through case study demonstrations.
 - A tutorial for running ORCA 6 calculations and performing post calculation visualization using ChemCraft and VMD.
 - A guide for setting up a virtual node for local ORCA computations.
 
@@ -73,6 +64,19 @@ This section includes detailed case studies applying ORCA 6 to different chemica
 # Acknowledgments
 My primary sources for learning computational chemistry and DFT principles include:
 - Dr. Frank Neese (Max-Planck-Institut für Kohlenforschung)
+    - from DFT and ORCA tutorials as well as as the ORCA manual
+    - [Start His Video Series](https://www.youtube.com/watch?v=-ThgCJgsi_s&t=304s)
+    - [ORCA Manual](https://www.faccts.de/docs/orca/6.0/manual/)
 - Dr. Chris Cramer (University of Minnesota)
+    - Essentials of Computational Chemistry, Theory and Models
+    - [PDFCopy](http://lqtc.fcien.edu.uy/cursos/Fq2/2009/libros/Essentials%20of%20Computational%20Chemistry%20Theories%20and%20Models%202d%20Ed%20-%20Christopher%20J.%20Cramer.pdf)
+- [ORCA Library](https://sites.google.com/site/orcainputlibrary/home)
 
+## Copyright
+
+© 2025 M.G.Utashiro. All rights reserved.  
+
+This repository and its contents, including tutorials and case studies, are provided for educational and research purposes. Redistribution, modification, or commercial use of this material without explicit permission is prohibited. 
+
+ORCA is developed by Dr. Neese's Group; for official documentation and licensing, visit [https://orcaforum.kofo.mpg.de](https://orcaforum.kofo.mpg.de).
   
