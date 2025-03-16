@@ -1,0 +1,45 @@
+! RKS def2-SVP def2/J RIJCOSX 
+! TightSCF SlowConv CPCM(DMSO)
+! VERYTIGHTOPT DefGrid2
+! moread
+
+%maxcore 4000
+
+%pal
+  nprocs 1
+end
+
+%basis
+  newGTO O "def2-TZVP" end
+end
+
+%method
+  Functional B3LYP
+  RI on
+end
+
+%scf
+  HFTyp RKS
+  maxiter 300
+end
+
+%geom
+  TolRMSG=3e-5
+  MaxIter 200
+end
+
+%cpcm
+  epsilon 46.7
+end
+
+%tddft
+  nroots 15
+  Triplets true
+  DoNTO true
+  NTOThresh 1e-4
+end
+
+
+# %moinp "/FULL/PATH/TO/FILENAME.gbw"
+
+* xyzfile 0 1 /FULL/PATH/TO/FILENAME.xyz

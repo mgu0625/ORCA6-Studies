@@ -101,8 +101,6 @@ Key Computational Settings:
   	    	- automated by parsing .xyz file to find the optimized coordinate and to reference for evaluating structural deviation (Make sure to know Atom Numbers, can visualize using Avogadro)
 
 
-**Sample `.out` files /ORCA6-NOTES/output_files**
-
 ##### From Geometry Optimization of HYQ at Gas-Phase (Comparison of Functionals)
 | Functional Name | Aux Basis | Final SCF Energy (Hartree) | ΔE (eV) | Computational Time |
 | :---: | :---: | :---: | :---: | :---: |
@@ -195,7 +193,7 @@ Solvent Implementation:
 - DMSO (Polar Aprotic Solvent) 
 - n-Hexane (NonPolar Solvent)
 
-**Example input file in /ORCA6-NOTES/input_files**
+**Example input file in /ORCA6-NOTES/input_files/HYQ_GeomOpt_CPCM_PBE0.inp**
 
 ### Geometry Optimization Results
 
@@ -272,6 +270,8 @@ Functional Winner: B3LYP       Solvent Winner: DMSO (Polar Aprotic)
 - Example ORCA Input Keyword:
   	- `! RKS def2-SVP RIJCOSX LIBXC(B3LYP) TightSCF PrintBasis`
  
+**Example Input File for running Single Point Energy + plotting request: '/ORCA6-Studies/input_files/HYQ_B3LYP_SPEnergy.inp'**
+
 From Output File:
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/a4b24d87-a344-4304-9ebc-1b4fe34ec194" />
@@ -319,6 +319,7 @@ Spin Density of HYQ (visualized on VMD)
 - Atom labels were difficult to display through isosurfaces.
 	- Attempted Tk Console commands but removed labels due to visibility issues.
 	- Verified atom correspondence using .xyz file instead.
+
 #### Takeaways:
 
 Solvent Effects on MO Energies:
@@ -340,7 +341,7 @@ Spin Density Observations:
   - Dominant MO contributions (e.g., HOMO → LUMO Transitions)
   - Oscillator strength (fosc) for UV-vis spectral intensities.
  
-  Extracted TDDFT Data Available in: /LINK/TO/PATH
+  Extracted TDDFT Data Available in: /HYQ/
 
   ### Sample Excitation Data:
   
@@ -353,7 +354,7 @@ Spin Density Observations:
 
 Plotted vertical excitation energy using Python Script
 
-Script example: /path/to/script
+**Script example: `/ORCA6-Studies/scripts/jablonskiplotting.py`**
 
 <img width="350" alt="image" src="https://github.com/user-attachments/assets/deedbe08-d4b7-4f14-829f-ad36d3e36abd" />
 
@@ -362,7 +363,7 @@ Script example: /path/to/script
 
 Extracted TDDFT excitation wavelengths and oscillator strengths (fosc) to generate UV-vis absorption spectrum
 
-Python Script: /orca6-study/scripts/HYQ_TDDFT_UVVISplot.py
+**Python Script: `/orca6-study/scripts/uvvisplotting.py`**
 
 Features of Python Script:
 - Read TDDFT excitation data from `.xlsx`.
@@ -393,3 +394,13 @@ Struggles here:
   	- Resuled in printing inidividual MOs from orca_plot instead 🫠
 - NTO values was (probably) too small, couldn't open .cube file on VMD, ChemCraft, nor Multiwfn 🥲
 	- tried redoing NTO with relaxed ES geometry optimization.
+
+#### Takeaway
+- Obtained excited-state properties from TDDFT calculations.
+- Generated molecular UV-vis absorption spectrum from oscillator strengths.
+- Attempted NTO visualization, but encountered issues with .cube file conversion.
+	- possible the NTO energy values were too small..?
+
+-----
+
+
