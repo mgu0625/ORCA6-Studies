@@ -44,6 +44,8 @@ References for HYQ Studies:
 4. TDDFT Study and Excited-State Properties
 - Perform **TDDFT** calculation to obtain vertical excitation energies
 - Analyze the **contributions of molecular orbitals (MOs) to each excitation**.
+- Generate UV-vis spectrum from TDDFT oscillator strength
+- Visualize Neutral Transition Orbitals (NTOs) to interpret electronic transitions
 
 5. Relaxed Excited-State Geometry Optimization
 - Optimize the lowest excited-state geometry using **TDDFT with state-tracking**.
@@ -329,4 +331,65 @@ Spin Density Observations:
 
   --------
 
+  ## 4. TDDFT Analysis
+
+  #### Vertical Excitation Energy Analysis
+
+  Excited-state properties extracted from ORCA TDDFT calculations:
+  - Excitation energies (eV & $cm^{-1}$)
+  - Dominant MO contributions (e.g., HOMO → LUMO Transitions)
+  - Oscillator strength (fosc) for UV-vis spectral intensities.
+ 
+  Extracted TDDFT Data Available in: /LINK/TO/PATH
+
+  ### Sample Excitation Data:
   
+| State	Energy (Eh) | Energy (eV) | Energy ($cm^{-1}$) |
+| :---: | :---: | :---: | :---: |
+| 1 | 0.162544 | 4.423 | 35674.2 |
+| 2 | 0.210737 | 5.734 | 46251.3 |
+| 3 | 0.228764 | 6.225 | 50207.9 | 
+| 4 | 0.231882 | 6.31 | 50892.1 |
+
+Plotted vertical excitation energy using Python Script
+
+Script example: /path/to/script
+
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/deedbe08-d4b7-4f14-829f-ad36d3e36abd" />
+
+
+#### UV-Vis Spectrum Generation
+
+Extracted TDDFT excitation wavelengths and oscillator strengths (fosc) to generate UV-vis absorption spectrum
+
+Python Script: /orca6-study/scripts/HYQ_TDDFT_UVVISplot.py
+
+Features of Python Script:
+- Read TDDFT excitation data from `.xlsx`.
+- Applies Gaussian broadening to simulate spectral envelope.
+- Inverts x-axis (standard UV-vis convention).
+- Saves spectrum as `.png` file
+
+Running script: `python filename.py`
+
+Generated UV-Vis Plot:
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/55901ecf-c399-4780-896a-ac04ea01954a" />
+
+#### NTO (Natural Transition Orbitals) analysis
+
+Purpose: to help visualize electronic density changes in electronic excitations.
+
+In Input File: 
+
+<img width="130" alt="image" src="https://github.com/user-attachments/assets/68450871-f0e2-40d5-89b8-9edd46d1f764" />
+
+Output file Result:
+
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/c40ffc60-41d9-4d24-95c5-b7a6783e2eeb" />
+
+Struggles here:
+- Tried to use bash script to convert .nto files to .cube files but was not successful..
+  	- Resuled in printing inidividual MOs from orca_plot instead 🫠
+- NTO values was (probably) too small, couldn't open .cube file on VMD, ChemCraft, nor Multiwfn 🥲
+	- tried redoing NTO with relaxed ES geometry optimization.
