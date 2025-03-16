@@ -1,0 +1,45 @@
+! RKS def2-SVP RIJCOSX LIBXC(B3LYP) NBO TightSCF
+! Printbasis
+
+% maxcore 4000
+
+%basis
+  NewGTO O "def2-TZVP" end
+end
+
+%method
+  Functional B3LYP
+  RI on
+end
+
+%output
+#  Print[P_MOs] 1
+  Print[P_Basis] 1
+end
+
+%scf
+  Convergence VeryTight
+end
+
+%plots
+  dim1 45
+  dim2 45
+  dim3 45
+  min1 -7.0
+  min2 -7.0
+  min3 -7.0
+  max1 7.0
+  max2 7.0
+  max3 7.0
+  Format Gaussian_Cube
+
+  MO("HYQOrbitalMO29.cube", 29, 0); #HOMO
+  MO("HYQOrbitalMO28.cube", 28, 0); #HOMO-1
+  MO("HYQOrbitalMO30.cube", 30, 0); #LUMO
+  MO("HYQOrbitalMO31.cube", 31, 0); #LUMO+1
+  UNO("HYQUNO-35.cube", 35);
+  ElDens("HYQElDens.cube");
+#  SpinDens("HYQSpinDens.plt");
+end
+
+* xyz 0 1 /FULL/LINK/TO/PATH/FILENAME.xyz
