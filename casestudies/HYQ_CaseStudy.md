@@ -1,4 +1,4 @@
-<img width="484" alt="image" src="https://github.com/user-attachments/assets/1bc758fb-1b30-419c-a9b7-7f56257ecaed" /># Hydroquinone (HYQ) ORCA 6 Detailed Electronic Study
+# Hydroquinone (HYQ) ORCA 6 Detailed Electronic Study
 
 ### 1 Hartree (Eh) = 27.2114 eV = 630 kcal/mol = 2600 kJ / mol = $2.2 x 10^5 cm^{-1}$ = 1/13.6 Bohr
 
@@ -272,7 +272,7 @@ Functional Winner: B3LYP       Solvent Winner: DMSO (Polar Aprotic)
  
 From Output File:
 
-<img width="484" alt="image" src="https://github.com/user-attachments/assets/a4b24d87-a344-4304-9ebc-1b4fe34ec194" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/a4b24d87-a344-4304-9ebc-1b4fe34ec194" />
 
 
 - Generating MO cube Files to visualize (Under %plots):
@@ -305,19 +305,19 @@ Spin Density of HYQ (visualized on VMD)
 | :---: | :---: |
 | <img width="200" alt="image" src="https://github.com/user-attachments/assets/b3943210-f067-42d5-a5e7-1275f958519e" /> | <img width="200" alt="image" src="https://github.com/user-attachments/assets/49f39231-ee9d-437b-95ae-8ef61015b13e" /> |
 
-##### Observations:
+#### Key Observations:
 - HOMO: Primarily located on center aromatic ring carbons
 - LUMO: Shows electron density on the ring as well as one side of the hydroxide group (could be on other side as well but appears "sliced").
 - Spin Density: showed homogeneous spin density throughout the molecule but appeared sliced on the same Oxygen (Oxygen #2 on .xyz file) as shown on the HOMO LUMO MOs
 
-##### Troubleshooting Notes:
+#### Troubleshooting Notes:
 - Isosurfaces appeared sliced at default values.
 	- Adjusted isosurface to 0.5—resolved slicing issue.
 	- Re-ran cube file generation with different dimensions but saw no improvement.
 - Atom labels were difficult to display through isosurfaces.
 	- Attempted Tk Console commands but removed labels due to visibility issues.
 	- Verified atom correspondence using .xyz file instead.
-##### Takeaways:
+#### Takeaways:
 
 Solvent Effects on MO Energies:
 - Compared HOMO-LUMO gap across solvents to examine stabilization effects.
@@ -326,5 +326,7 @@ Solvent Effects on MO Energies:
 Spin Density Observations:
 - More delocalized spin distribution in polar solvents, indicating greater solvation effects.
 - Non-polar environments showed localized density, suggesting weaker solute-solvent interactions.
+
+  --------
 
   
