@@ -13,8 +13,8 @@ For the maleimide dimer TDDFT calculations, initial SCF attempts with the origin
 
 DFT calculations were performed to obtain the optimized geometry, electronic structure, and dipole moment properties. The RIJCOSX approximation was used along with the def2-basis set and CPCM solvent model (MECN) in ORCA 6.
 
-| :---: | :---: | :---: | 
 | Property | Value (Eh) | Value (eV) |
+| :---: | :---: | :---: | 
 | Initial Energy $(E_i)$ | -437.30082 | -11899.567 |
 | Final Energy $(E_f)$ | -437.30193 | -11899.598 |
 | Dispersion Correction | -0.0133941 | — |
@@ -29,8 +29,8 @@ Key Observations:
 
 #### Vibrational Frequency Calculation of Maleimide Monomer
 
-| :---: | :---: | :---: | 
 | Property | Value (Eh) | Value (eV) |
+| :---: | :---: | :---: | 
 | Initial Energy $(E_i)$ | -437.30193 | -11899.598 |
 | Final Energy $(E_f)$ | -437.30193 | -11899.598 |
 | Total Thermal Energy | — | -11895.977 |
@@ -45,8 +45,8 @@ Key Observations:
 
 #### Geometry Optimization of Maleimide Dimer
 
-| :---: | :---: | :---: | 
 | Property | Value (Eh) | Value (eV) |
+| :---: | :---: | :---: | 
 | Initial Energy $(E_i)$ | -874.61659 | -23799.542 |
 | Final Energy $(E_f)$ | -874.64365 | -23800.278 |
 | Dispersion Correction | -0.0415539 | — |
@@ -61,8 +61,8 @@ Key Observations:
 
 #### Vibrational Frequency of Maleimide Dimer
 
-| :---: | :---: | :---: | 
 | Property | Value (Eh) | Value (eV) |
+| :---: | :---: | :---: | 
 | Initial Energy $(E_i)$ | -874.64365 | -23800.278 |
 | Final Energy $(E_f)$ | -874.64365 | -23800.278 |
 | Enthalpy Correction (ΔH) | — | -23792.858 |
