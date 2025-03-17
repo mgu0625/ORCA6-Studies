@@ -332,18 +332,18 @@ Spin Density Observations:
 
   --------
 
-  ## 4. TDDFT Analysis
+## 4. TDDFT Analysis
 
-  #### Vertical Excitation Energy Analysis
+#### Vertical Excitation Energy Analysis
 
-  Excited-state properties extracted from ORCA TDDFT calculations:
-  - Excitation energies (eV & $cm^{-1}$)
-  - Dominant MO contributions (e.g., HOMO → LUMO Transitions)
-  - Oscillator strength (fosc) for UV-vis spectral intensities.
+Excited-state properties extracted from ORCA TDDFT calculations:
+- Excitation energies (eV & $cm^{-1}$)
+- Dominant MO contributions (e.g., HOMO → LUMO Transitions)
+- Oscillator strength (fosc) for UV-vis spectral intensities.
  
-  Extracted TDDFT Data Available in: /HYQ/
+Extracted TDDFT Data Available in: /HYQ/
 
-  ### Sample Excitation Data:
+### Sample Excitation Data:
   
 | State	Energy (Eh) | Energy (eV) | Energy ($cm^{-1}$) |
 | :---: | :---: | :---: | :---: |
