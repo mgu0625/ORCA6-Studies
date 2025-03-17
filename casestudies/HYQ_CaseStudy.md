@@ -503,5 +503,31 @@ Angle and Bond Distance Example (IRoot T1)
 | <img width="200" alt="image" src="https://github.com/user-attachments/assets/f28a11a8-5873-4b51-a259-d1ac6f4f4682" /> | <img width="200" alt="image" src="https://github.com/user-attachments/assets/ae57ff8c-0a0c-4023-b536-86ffe4ddca62" /> | <img width="539" alt="image" src="https://github.com/user-attachments/assets/44ce2092-c32e-43b8-a799-ee39ad568c01" /> |
 
 
+---------
+
+## 6. Potential Energy Surface (PES) and Spectral Analysis
+
+Potential Energy Surface (PES) analysis provides insights into molecular energy variations as a function of geometric changes. This is crucial for understanding reaction pathways, excited-state behavior, and transition state dynamics.
+
+### Generating PES Data from TDDFT
+
+Attempted to generate PES on Python and on Matlab for S1 and T1 (Script attached) but the data was too close in numbers, the PES ended up as linear plot.
+
+Matlab Plot
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/f1dfce16-50b7-40a4-b625-41796472a691" />
+
+Possible Issues:
+- Grid interpolation errors
+  	- attempted to resolve by adding more unique bond lengths and using 'natural' interpolation.
+- Sharp jumps in PES surface
+  	- Fixed by normalizing energy to eV.
+- Data points were initially too collinear, matlab refused to plot
 
 
+-----
+
+License
+
+© 2024 Monica Utashiro-Aichouri. This work is licensed under the MIT License.
+Permission is granted to use, modify, and distribute this document with attribution.
