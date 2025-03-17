@@ -20,7 +20,7 @@ Tutorial followed: [YouTubeLink](https://www.youtube.com/watch?v=EKJRaC240vg)
 
 One of the structure was copy-pasted to the other file
 
-<img width="350" alt="image" src="https://github.com/user-attachments/assets/dabfda83-5bde-48a2-a148-27e976bc78a3" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/2d366862-b80b-43b9-b1b2-253d977ddf47" />
 
-<img width="350" alt="image" src="https://github.com/user-attachments/assets/2d366862-b80b-43b9-b1b2-253d977ddf47" />
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/598e3fbc-a297-4f02-8ef6-c6b3ae5027de" />
 
