@@ -35,7 +35,6 @@ plt.savefig("PES_1D.png", dpi=300)
 plt.show()
 
 # 2D PES
-# Assuming reaction coordinate (arbitrary units)
 reaction_coord = np.linspace(0, len(states) - 1, len(states))
 
 plt.figure(figsize=(6, 5))
@@ -51,7 +50,6 @@ plt.savefig("PES_2D.png", dpi=300)
 plt.show()
 
 # 3D PES
-# Example reaction coordinates (modify as needed)
 x = np.array([0, 1, 2, 3, 4, 5])  # First reaction coordinate
 y = np.array([0, 1, 2, 3, 4, 5])  # Second reaction coordinate
 X, Y = np.meshgrid(x, y)
