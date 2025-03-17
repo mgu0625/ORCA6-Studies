@@ -391,7 +391,7 @@ Output file Result:
 
 Struggles here:
 - Tried to use bash script to convert .nto files to .cube files but was not successful..
-  	- Resuled in printing inidividual MOs from orca_plot instead 🫠
+  	- Resulted in printing inidividual MOs from orca_plot instead 🫠
 - NTO values was (probably) too small, couldn't open .cube file on VMD, ChemCraft, nor Multiwfn 🥲
 	- tried redoing NTO with relaxed ES geometry optimization.
 
@@ -402,5 +402,106 @@ Struggles here:
 	- possible the NTO energy values were too small..?
 
 -----
+
+## 5. Relaxed-ES Geometry Optimization
+
+### Key Observations from CI vs TDDFT
+
+Excitation Energies & Wavenumbers:
+- Both CI and TDDFT results are identical in energy (eV) and wavenumber ($cm^{-1}$), confirming consistency in excited-state energies.
+  	- Can suggest both methods are capturing similar electronic states for HYQ, validating accuracy of TDDFT.
+ 
+  <img width="400" alt="image" src="https://github.com/user-attachments/assets/3536f8ba-4815-4b60-9adb-710d1fde90ee" />
+
+Final SCF Energy & Dipole Magnitude:
+- SCF energies are the same in both methods. This indicates both approaches stabilize to the same electronic configuration.
+- Dipole moment (3.7767 Debye) is also identical, suggesting that the electronic density distribution does not change significantly between methods.
+
+Computation Time:
+- CI: 12 min 38 sec vs. TDDFT: 12 min 37 sec
+- Computational costs are nearly the same, indicating that CI does not offer a significant efficiency advantage over TDDFT for this system.
+
+**Why I continued with TDDFT**
+- More widely validated for geometry optimization and trying to keep theory consistent.
+
+  ### Key Observations from Structural Analysis
+
+  Ground vs. Excited-State Geomtry (Bond Lengths)
+
+Bond Labels (`.xyz` file opened on Avogadro)
+  <img width="385" alt="image" src="https://github.com/user-attachments/assets/b64a3bd1-d925-426f-9a73-25c15cbeffb9" />
+
+#### Bond Lengths Comparison
+
+| States | Bond Type | Bond Lengths (Å) | Bond Type | Bond Angles | Bond Type | Dihedral Angle |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| S0 | O#1 - C13 | 1.353 | C#3 - O#1 | 110.43° | C#3 - O#1 - O#2 - C#8 | -0.51° |
+| - | O1 - H14 | 0.973 | C8 - O2 | |110.51° | - | - |
+| - | O2 - C8 | 1.354 | - | - | - | - |
+| - | O2 - H9 | 0.973 | - | - | - | - |
+| S1 | O1 - C13 | 1.353 | C3(3) - O1(1) | 110.43° | C3 - O1 - O2 - C8 | -0.51° |
+| - | O1 - H14(14) | 0.973 | C8(8) - O2(2) | 110.51° | - | - |
+| - | O2 - C8 | 1.354 | - | - | - | - |
+| - | O2 - H9 | 0.973 | - | - | - | - |			
+| S2 | O1 - C13 | 1.353	 | C3 - O1 | 110.43° | C3 - O1 - O2 - C8 | -0.52° |
+| - | O1 - H14 | 0.973 | C8(8) - O2 | 110.50° | - | - |
+| - | O2 - C8 | 1.354 | - | - | - | - |
+| - | O2 - H9 | 0.973 | - | - | - | - |
+| S5 | O1 - C13 | 1.366 | C3 - O1 | 110.23° | C3 - O1 - O2 - C8 | -2.03° |
+| - | O1 - H14 | 0.979 | C8 - O2 | 110.17° | - | - |
+| - | O2 - C8 | 1.366 | - | - | - | - |
+| - | O2 - H9 |	0.978 | - | - | - | - |
+| T1 | O1 - C13 | 1.353 | C3 - O1 | 110.43° | C3 - O1 - O2 - C8 |  -0.51° |
+| - | O1 - H14 | 0.973 | C8 - O2 | 110.51° | - | - |
+| - | O2 - C8 |	1.354 | - | - | - | - |
+| - | O2 - H9 |	0.973 | - | - | - | - |
+| T2 | O1 - C13 | 1.353 | C3 - O1 | 110.43° | C3 - O1 - O2 - C8 | -0.52° |
+| - | O1 - H14 | 0.973 | C8 - O2 | 110.50° | - | - |	
+| - | O2 - C8 |	1.354 | - | - | - | - |
+| - | O2 - H9 |	0.973 | - | - | - | - |
+| T5 | O1 - C13 | 1.366 | C3 - O1 | 110.23° | C3 - O1 - O2 - C8 | -2.03° |
+| - | O1 - H14 | 0.979 | C8 - O2 | 110.17° | - | - |
+| - | O2 - C8 | 1.366 | - | - | - | - |
+| - | O2 - H9 | 0.978 | - | - | - | - |
+
+#### Key Observations
+
+**Ground vs Excited-State Geometry (Bond Lengths)**
+
+C-O bond lengths:
+- S0 → S1/2/T1/T2:
+  	- The O1-C13 and O2-C8 bonds remain constant (1.353 - 1.354 Å) in these states.
+- S5 and T5:
+	- Significant elongation of O1-C13 and O2-C8 bonds (~1.366 Å) compared to the ground state (S0, 1.353 Å).
+
+O-H Bond Lengths:
+- Stable at 0.973 Å for S1, S2, T1, T2, but slightly increases (0.979 - 0.978 Å) in S5/T5.
+- Suggests weaker O-H bonding in higher excited states, potentially hinting at hydrogen bond effects or proton transfer tendencies.
+
+**Bond Angle Trends**
+
+C3-O1 and C8-O2 Angles:
+- S0, S1, S2, T1, T2: Consistent (~110.43° - 110.51°) → Minimal structural rearrangement.
+- S5/T5:
+  	- Angles shift to ~110.23° and 110.17°, respectively.
+  	- This could indicate partial relaxation and distortions in the higher excited states.
+
+Angle and Bond Distance Example (IRoot T1)
+
+<img width="333" alt="image" src="https://github.com/user-attachments/assets/a0676f64-6184-432a-968e-fbcc60efdc1d" />
+
+
+**Dihedral Angle Trends**
+- Minimal change (~ -0.51° to -0.52°) in S0, S1, S2, T1, and T2.
+- S5 and T5 show a larger distortion (~ -2.03°).
+  	- This suggests increased torsional strain or out-of-plane movement in higher excited states.
+
+### PES
+ 
+| 1D PES | 2D PES | 3D PES | 
+| :---: | :---: | :---: |
+| <img width="200" alt="image" src="https://github.com/user-attachments/assets/f28a11a8-5873-4b51-a259-d1ac6f4f4682" /> | <img width="200" alt="image" src="https://github.com/user-attachments/assets/ae57ff8c-0a0c-4023-b536-86ffe4ddca62" /> | <img width="539" alt="image" src="https://github.com/user-attachments/assets/44ce2092-c32e-43b8-a799-ee39ad568c01" /> |
+
+
 
 
