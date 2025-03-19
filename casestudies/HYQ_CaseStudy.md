@@ -345,7 +345,7 @@ Extracted TDDFT Data Available in: /HYQ/
 
 ### Sample Excitation Data:
   
-| State	Energy (Eh) | Energy (eV) | Energy ($cm^{-1}$) |
+| State | State	Energy (Eh) | Energy (eV) | Energy ($cm^{-1}$) |
 | :---: | :---: | :---: | :---: |
 | 1 | 0.162544 | 4.423 | 35674.2 |
 | 2 | 0.210737 | 5.734 | 46251.3 |
