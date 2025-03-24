@@ -527,6 +527,10 @@ Possible Issues:
 
 -----
 
+## 7. Comparison of Calculation with Published Values
+
+
+
 License
 
 © 2024 Monica Utashiro-Aichouri. This work is licensed under the MIT License.
