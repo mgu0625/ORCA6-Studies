@@ -91,7 +91,7 @@ $1166.6 cm^{-1}$: symmetrical rocking vibration on two seperate sites on aromati
 
 $1182.36 cm^{-1}$: All hydrogens has scissoring vibration that is symmetrical throughout the compound, O-H scissoring is strongest.
 
-![Uploading HYQIR1182cm-1.gif…]()
+![HYQIR1182cm-1](https://github.com/user-attachments/assets/63d1c024-1d76-48a0-88a4-e26e889c2520)
 
 $1189.9 cm^{-1}$: All hydrogens are rocking vibration that is symmetrical throughout the compound, O-H rocking is strongest.
 
