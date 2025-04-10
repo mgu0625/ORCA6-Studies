@@ -15,7 +15,7 @@ intensities = {
 }
 
 # Setting up figure with 3 stacked subplots (shared x-axis)
-fig, axes = plt.subplots(3, 1, figsize=(10, 6), sharex=True)
+fig, axes = plt.subplots(3, 1, figsize=(8, 6), sharex=True)
 
 # Plot styling
 colors = {'B3LYP': '#c7b0ec', 'PBE0': '#ecc7b0', 'PBE': '#b0ecc7'}
@@ -28,7 +28,7 @@ for ax, method in zip(axes, methods[::-1]):  # reverse order
         y = -np.exp(-((x - freq)**2) / (2 * peak_width**2)) * inten / 100
         ax.plot(x, y, color=colors[method])
         ax.text(freq, min(y)-0.05, f'{inten:.1f} km/mol', fontsize=8, ha='center', va='top')
-
+    
     ax.set_ylabel(method, fontsize=10, rotation=0, labelpad=30)
     ax.set_yticks([])
     ax.set_xlim(3700, 3900)
@@ -36,6 +36,9 @@ for ax, method in zip(axes, methods[::-1]):  # reverse order
     ax.spines['right'].set_visible(False)
     ax.spines['top'].set_visible(False)
     ax.spines['left'].set_visible(False)
+
+
+
 
 # formatting
 axes[-1].set_xlabel("Wavenumber (cm⁻¹)")
